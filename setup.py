@@ -1,7 +1,8 @@
 import pathlib
-import aspect_based_sentiment_analysis as absa
-from setuptools import setup
 from setuptools import find_packages
+from setuptools import setup
+
+import aspect_based_sentiment_analysis as absa
 
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
@@ -24,8 +25,8 @@ setup(
     include_package_data=False,
     packages=find_packages(),
     install_requires=[
-        'tensorflow>=2.1',
-        'transformers>=2.5',
+        'tensorflow-cpu~=2.1',
+        'transformers~=2.5',
         'pytest',
         'scikit-learn',
         'ipython',
