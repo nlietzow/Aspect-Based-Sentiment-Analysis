@@ -2,8 +2,6 @@ import pathlib
 from setuptools import find_packages
 from setuptools import setup
 
-import aspect_based_sentiment_analysis as absa
-
 # The directory containing this file
 HERE = pathlib.Path(__file__).parent
 
@@ -14,7 +12,7 @@ description = 'Aspect Based Sentiment Analysis: ' \
 
 setup(
     name='aspect-based-sentiment-analysis',
-    version=absa.__version__,  # Semantic: MAJOR, MINOR, and PATCH
+    version="1.1.2",  # Semantic: MAJOR, MINOR, and PATCH
     url='https://github.com/ScalaConsultants/Aspect-Based-Sentiment-Analysis',
     description=description,
     long_description=README,
